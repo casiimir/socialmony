@@ -1,5 +1,5 @@
 # Esercizio
-Sulla base dell'esercizio di oggi, sistemare la veste grafica (CSS) del progetto.
-
-# Avanzato
-Aggiungere la funzionalita di rimozione per ogni card, che una volta cliccata cancella la card in questione.
+Sulla base dell'esercizio di oggi:
+- Pubblicare il vostro social newtork su Github utilizzando la funzionalità Pages.
+- Consultare la documentazione presente all'indirizzo: https://rogerdudler.github.io/git-guide/index.it.html
+- - e testare, in un progettino a parte, tutti questi comandi

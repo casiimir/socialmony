@@ -37,20 +37,38 @@ const createFriendEl = (parent, name, photo) => {
   parent.appendChild(wrapper);
 }
 
-const createMessageEl = (parent, text, sender, date) => {
+const createMessageEl = (parent, id, text, sender, date, callback = () => {}) => {
   const wrapper = c('div');
   const textPar = c('p');
   const senderPar = c('p');
   const dataPar = c('p');
 
   wrapper.className = 'messageCard';
+  wrapper.setAttribute('id', id);
   textPar.textContent = text;
   senderPar.textContent = sender;
   // dataPar.textContent = date.split('T')[0].split('-').reverse().join('-');
   dataPar.textContent = date;
+
+  wrapper.addEventListener('click', callback)
 
   wrapper.append(textPar, senderPar, dataPar);
   parent.appendChild(wrapper);
 }
 
 export { c, q, createCard, createFriendEl, createMessageEl };
+
+
+
+
+// Un piccolo presente
+// Array.prototype.ourMap = function(callback) {
+//   let newArray = [];
+
+//   for (let i = 0; i <= this.length; i++) {
+//       let mapped = callback(this[i]);
+//       newArray.push(mapped);
+//   }
+  
+//   return newArray;
+// }
