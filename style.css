@@ -9,6 +9,15 @@ body {
   flex-direction: column;
 }
 
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
 .friends {
   display: flex;
   flex-direction: column;
@@ -40,6 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-bottom: 50px;
   width: 100%;
   background: lightseagreen;
 }
